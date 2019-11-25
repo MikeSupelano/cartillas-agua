@@ -1,0 +1,26 @@
+header{
+    height:30vh;
+    min-height: 200px;
+    display:flex;
+    align-items:center;
+    .logos{
+        width: 70%;
+        display:flex;
+        justify-content: space-around;
+    }
+    .titulo{
+        width: 30%;
+    }
+}
+
+main{
+    height: 70vh;
+    min-height: 100%;
+    display:flex;
+    section.cartilla{
+        width:20%;
+        margin:0;
+        border:1px solid lightgray;
+        padding:1rem;
+    }
+}
