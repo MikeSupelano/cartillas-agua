@@ -53,6 +53,11 @@
     a{
         text-decoration: none;
     }
+    .menumarco2izq{
+        div{
+            font-weight: 400;
+        }
+    }
     #footer-bottom{        
         position: relative;
         bottom:0;
@@ -85,6 +90,27 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@mixin footer-sm() {
+    #footer{
+        &>div{
+                width: 100%;
+                &:not(#footer-bottom){
+                    margin-bottom: 60px;
+                }
+        }
+        #footer-bottom{
+                flex-direction: column;
+            p{
+                padding-bottom:3px;
+            }
+        }
+        .textwidget img{
+            width: 60% !important;
+            min-width: 280px;
         }
     }
 }

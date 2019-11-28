@@ -29,7 +29,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background-image: url(../img/bg.jpg);
-  background-size: cover;
+  background-size: contain;
   color: white;
 }
 
@@ -41,6 +41,7 @@ header .logos {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 100%;
+  padding: 2rem 0;
 }
 
 header .logos img {
@@ -69,6 +70,8 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 30px 15px 0;
+  font-family: 'Futura';
 }
 
 main section.cartilla {
@@ -76,6 +79,13 @@ main section.cartilla {
   margin: 0;
   border: 1px solid lightgray;
   padding: 1rem;
+  max-height: 1000px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main section.cartilla:hover {
+  width: 35%;
 }
 
 #footer {
@@ -147,6 +157,10 @@ main section.cartilla {
   text-decoration: none;
 }
 
+#footer .menumarco2izq div {
+  font-weight: 400;
+}
+
 #footer #footer-bottom {
   position: relative;
   bottom: 0;
@@ -193,5 +207,27 @@ main section.cartilla {
 
 #footer #footer-bottom #footer-nav ul li a i {
   color: white;
+}
+
+@media (max-width: 999px) {
+  #footer > div {
+    width: 100%;
+  }
+  #footer > div:not(#footer-bottom) {
+    margin-bottom: 60px;
+  }
+  #footer #footer-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #footer #footer-bottom p {
+    padding-bottom: 3px;
+  }
+  #footer .textwidget img {
+    width: 60% !important;
+    min-width: 280px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

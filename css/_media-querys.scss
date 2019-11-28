@@ -1,0 +1,4 @@
+// small screen size (sm)
+@media (max-width: 999px) {
+    @include footer-sm();
+}
