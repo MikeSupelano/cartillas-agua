@@ -1,15 +1,33 @@
 header{
-    height:30vh;
-    min-height: 200px;
+    height:20vh;
+    min-height: 180px;
     display:flex;
     align-items:center;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    color:white;
     .logos{
-        width: 70%;
+        width: 60%;
         display:flex;
         justify-content: space-around;
+        height: 100%;
+        img{
+            width: auto;
+            height: 100%;
+        }
     }
     .titulo{
-        width: 30%;
+        width: 40%;
+        font-family: 'FuturaArabicBold';
+        font-size: 1.3rem;
+        line-height:2rem;
+        text-align: center;
+        .title-agua{
+            display:block;
+            font-size: 4rem;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
     }
 }
 
