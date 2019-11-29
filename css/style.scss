@@ -1,13 +1,9 @@
-@font-face {
-    font-family: Futura;
-    src: url(../assets/FuturaCondensedMedium.otf);
-}
+@import "./fonts";
+@import "./variables";
 
-@font-face {
-    font-family: FuturaArabicBold;
-    src: url(../assets/unicode.futurabb.ttf);
+img{
+    max-width: 100%;
 }
-
 body{
     margin:0;
     padding:0;

@@ -1,4 +1,5 @@
 // small screen size (sm)
 @media (max-width: 999px) {
+    @include principal-sm();
     @include footer-sm();
 }
