@@ -301,8 +301,8 @@ body * {
   display: grid;
   -ms-grid-columns: 48px minmax(0, 1fr) 48px;
       grid-template-columns: 48px minmax(0, 1fr) 48px;
-  -ms-grid-rows: 32px (minmax(0, 1fr))[8] 32px;
-      grid-template-rows: 32px repeat(8, minmax(0, 1fr)) 32px;
+  -ms-grid-rows: 32px (8vh)[2] (minmax(0, 1fr))[6] 32px;
+      grid-template-rows: 32px repeat(2, 8vh) repeat(6, minmax(0, 1fr)) 32px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -398,6 +398,10 @@ body * {
   text-decoration: none;
 }
 
+.fullscreen-container header .nav-modulos ul a.active {
+  color: #0F9C9E;
+}
+
 .fullscreen-container header .nav-modulos ul a li {
   cursor: pointer;
   -webkit-transition: all 0.2s ease;
@@ -482,6 +486,15 @@ body * {
       -ms-flex-align: center;
           align-items: center;
   font-family: inherit;
+}
+
+.fullscreen-container main .columna1 h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+  line-height: 1.1rem;
+  color: #0F9C9E;
+  font-family: 'FuturaArabicBold';
 }
 
 .fullscreen-container main .columna1 h2 {
@@ -676,6 +689,93 @@ body * {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
+}
+
+.fullscreen-container main .nav-paginas ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.fullscreen-container main .nav-paginas ul a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.fullscreen-container main .nav-paginas ul a li {
+  font-family: 'FuturaArabicBold';
+  color: #333333;
+}
+
+.fullscreen-container main .nav-paginas ul a:visited {
+  color: #333333;
+}
+
+.fullscreen-container main .nav-paginas ul a.active {
+  font-weight: 800;
+}
+
+.fullscreen-container main .nav-paginas ul a.active li {
+  color: #0F9C9E;
+}
+
+.fullscreen-container main > .columna1 {
+  padding: 1rem 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fullscreen-container main > .columna1 h1 {
+  margin-top: 15px;
+}
+
+.fullscreen-container main > .columna1 p {
+  margin-top: 8px;
+  line-height: 1.2rem;
+  font-size: 0.95rem;
+}
+
+.fullscreen-container main > .columna1 form.actividad {
+  width: 100%;
+}
+
+.fullscreen-container main > .columna1 form.actividad textarea {
+  width: 100%;
+  resize: vertical;
+  overflow: auto;
+  font-family: 'Open Sans';
+  padding: 10px;
+}
+
+.fullscreen-container main > .columna2 {
+  padding: 0.5rem;
+}
+
+.fullscreen-container main > .columna2 .legend-img {
+  width: 100%;
+  text-align: center;
+  font-family: 'Futura';
+}
+
+.fullscreen-container main > .columna2 .legend-img .color {
+  font-weight: 900;
+  color: #0F9C9E;
+}
+
+.fullscreen-container main > .columna2 img {
+  width: 70%;
+  height: auto;
+  padding: 1rem;
 }
 
 #footer {

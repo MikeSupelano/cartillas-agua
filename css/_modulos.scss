@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     display: grid;
     grid-template-columns: 48px minmax(0, 1fr) 48px;
-    grid-template-rows: 32px repeat(8, minmax(0, 1fr)) 32px;
+    grid-template-rows: 32px repeat(2, 8vh) repeat(6, minmax(0, 1fr)) 32px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     header{
@@ -61,7 +61,10 @@
                 width: 100%;
                 a{
                     color:white;
-                    text-decoration: none;                 
+                    text-decoration: none;
+                    &.active{
+                        color:$comunidades;
+                    }                 
                     li{
                         cursor: pointer;
                         transition: all 0.2s ease;  
@@ -111,6 +114,14 @@
             justify-content: space-evenly;
             align-items: center;
             font-family: inherit;
+            h1{
+                margin: 0;
+                padding: 0;
+                font-size: 1.3rem;
+                line-height: 1.1rem;
+                color:$comunidades;
+                font-family: 'FuturaArabicBold';
+            }
             h2{
                 margin: 0;
                 padding: 0;
@@ -230,6 +241,34 @@
                 border:0px;
                 box-shadow: 0 1px 1px rgba(0,0,0,.12), 0 2px 2px rgba(0,0,0,.12);
                 cursor: pointer;
+            }
+            ul{
+                list-style-type: none;
+                display: flex;
+                width: 75%;
+                margin: 0 auto;
+                padding: 0;
+                justify-content: space-evenly;
+                a{
+                    text-decoration: none;
+                    font-size:1.5rem;
+                    font-weight: 500;
+                    cursor: pointer;
+                    li{
+                        font-family: 'FuturaArabicBold';
+                        color: #333333;
+                    }
+                    &:visited{
+                        color:#333333;
+                    }
+                    &.active{
+                        font-weight: 800;
+                        li{
+                            color:$comunidades;
+                        }
+                    }                    
+                    
+                }
             }
         }
     }

@@ -1,0 +1,43 @@
+.fullscreen-container{
+    main{
+        &>.columna1{
+            padding: 1rem 10%;
+            justify-content: center;
+            h1{
+                margin-top: 15px;
+            }
+            p{
+                margin-top: 8px;
+                line-height: 1.2rem;
+                font-size: 0.95rem;
+            }
+            form.actividad{
+                width:100%;
+                textarea{
+                    width:100%;
+                    resize:vertical;
+                    overflow:auto;
+                    font-family:'Open Sans';
+                    padding:10px;
+                }
+            }            
+        }
+        &>.columna2{
+            padding:0.5rem;
+            .legend-img{
+                width: 100%;
+                text-align: center;
+                font-family: 'Futura';
+                .color{
+                    font-weight: 900;
+                    color:$comunidades;
+                }
+            }
+            img{
+                width:70%;
+                height: auto;
+                padding:1rem;
+            }            
+        }
+    }
+}
