@@ -759,6 +759,7 @@ body * {
 
 .fullscreen-container main > .columna2 {
   padding: 0.5rem;
+  padding-right: 10%;
 }
 
 .fullscreen-container main > .columna2 .legend-img {
@@ -776,6 +777,33 @@ body * {
   width: 70%;
   height: auto;
   padding: 1rem;
+}
+
+.fullscreen-container main > .columna2 h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+  line-height: 1.1rem;
+  color: #0F9C9E;
+  font-family: 'FuturaArabicBold';
+}
+
+.fullscreen-container main > .columna2 p {
+  margin-top: 8px;
+  line-height: 1.2rem;
+  font-size: 0.95rem;
+}
+
+.fullscreen-container main > .columna2 form.actividad {
+  width: 100%;
+}
+
+.fullscreen-container main > .columna2 form.actividad textarea {
+  width: 100%;
+  resize: vertical;
+  overflow: auto;
+  font-family: 'Open Sans';
+  padding: 10px;
 }
 
 #footer {

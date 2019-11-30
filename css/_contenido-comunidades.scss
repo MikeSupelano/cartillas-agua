@@ -24,6 +24,7 @@
         }
         &>.columna2{
             padding:0.5rem;
+            padding-right:10%;
             .legend-img{
                 width: 100%;
                 text-align: center;
@@ -37,7 +38,30 @@
                 width:70%;
                 height: auto;
                 padding:1rem;
-            }            
+            }
+            h1{
+                margin: 0;
+                padding: 0;
+                font-size: 1.3rem;
+                line-height: 1.1rem;
+                color:$comunidades;
+                font-family: 'FuturaArabicBold';
+            }
+            p{
+                margin-top: 8px;
+                line-height: 1.2rem;
+                font-size: 0.95rem;
+            }
+            form.actividad{
+                width:100%;
+                textarea{
+                    width:100%;
+                    resize:vertical;
+                    overflow:auto;
+                    font-family:'Open Sans';
+                    padding:10px;
+                }
+            } 
         }
     }
 }
