@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: Futura;
   src: url(../assets/FuturaCondensedMedium.otf);
@@ -23,7 +24,7 @@ body * {
   font-size: 16px;
 }
 
-header {
+.principal header {
   height: 20vh;
   min-height: 180px;
   display: -webkit-box;
@@ -37,7 +38,7 @@ header {
   color: white;
 }
 
-header .logos {
+.principal header .logos {
   width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,12 +49,12 @@ header .logos {
   padding: 2rem 0;
 }
 
-header .logos img {
+.principal header .logos img {
   width: auto;
   height: 100%;
 }
 
-header .titulo {
+.principal header .titulo {
   width: 40%;
   font-family: 'FuturaArabicBold';
   font-size: 1.3rem;
@@ -61,14 +62,14 @@ header .titulo {
   text-align: center;
 }
 
-header .titulo .title-agua {
+.principal header .titulo .title-agua {
   display: block;
   font-size: 4rem;
   text-transform: uppercase;
   font-weight: 800;
 }
 
-main {
+.principal main {
   height: 70vh;
   min-height: 100%;
   display: -webkit-box;
@@ -78,7 +79,7 @@ main {
   font-family: 'Futura';
 }
 
-main section.cartilla {
+.principal main section.cartilla {
   width: 20%;
   margin: 0;
   max-height: 1000px;
@@ -99,65 +100,65 @@ main section.cartilla {
   overflow: hidden;
 }
 
-main section.cartilla:hover {
+.principal main section.cartilla:hover {
   width: 35%;
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
 }
 
-main section.cartilla:hover .overlay {
+.principal main section.cartilla:hover .overlay {
   display: none;
 }
 
-main section.cartilla:hover .btn {
+.principal main section.cartilla:hover .btn {
   display: block;
 }
 
-main section.cartilla#primeraInfancia {
+.principal main section.cartilla#primeraInfancia {
   background-color: #11ADE4;
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
 
-main section.cartilla#primeraInfancia .portada > .fondo {
+.principal main section.cartilla#primeraInfancia .portada > .fondo {
   background-image: url(../img/primeraInfancia/bg.jpg);
 }
 
-main section.cartilla#primeroQuinto {
+.principal main section.cartilla#primeroQuinto {
   background-color: #D1E184;
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
 
-main section.cartilla#primeroQuinto .portada > .fondo {
+.principal main section.cartilla#primeroQuinto .portada > .fondo {
   background-image: url(../img/primeroQuinto/bg.jpg);
 }
 
-main section.cartilla#sextoNoveno {
+.principal main section.cartilla#sextoNoveno {
   background-color: #FCD624;
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
 
-main section.cartilla#sextoNoveno .portada > .fondo {
+.principal main section.cartilla#sextoNoveno .portada > .fondo {
   background-image: url(../img/sextoNoveno/bg.jpg);
 }
 
-main section.cartilla#decimoOnce {
+.principal main section.cartilla#decimoOnce {
   background-color: #B91C79;
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
 }
 
-main section.cartilla#decimoOnce .portada > .fondo {
+.principal main section.cartilla#decimoOnce .portada > .fondo {
   background-image: url(../img/decimoOnce/portada.JPG);
 }
 
-main section.cartilla#comunidades {
+.principal main section.cartilla#comunidades {
   background-color: #0F9C9E;
 }
 
-main section.cartilla h1.titulo {
+.principal main section.cartilla h1.titulo {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
@@ -179,7 +180,7 @@ main section.cartilla h1.titulo {
   background: #00000033;
 }
 
-main section.cartilla .portada {
+.principal main section.cartilla .portada {
   -ms-grid-row: 2;
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
@@ -202,7 +203,7 @@ main section.cartilla .portada {
   grid-row-gap: 0px;
 }
 
-main section.cartilla .portada > .fondo {
+.principal main section.cartilla .portada > .fondo {
   display: block;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -216,7 +217,7 @@ main section.cartilla .portada > .fondo {
   background-size: cover;
 }
 
-main section.cartilla .portada .companion {
+.principal main section.cartilla .portada .companion {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   -ms-grid-column: 2;
@@ -226,11 +227,11 @@ main section.cartilla .portada .companion {
   overflow: hidden;
 }
 
-main section.cartilla .portada .companion img {
+.principal main section.cartilla .portada .companion img {
   width: 140%;
 }
 
-main section.cartilla .logo {
+.principal main section.cartilla .logo {
   -ms-grid-row: 5;
   -ms-grid-row-span: 1;
   -ms-grid-column: 2;
@@ -240,7 +241,7 @@ main section.cartilla .logo {
   padding-right: 30px;
 }
 
-main section.cartilla .texto-descripcion {
+.principal main section.cartilla .texto-descripcion {
   -ms-grid-row: 5;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
@@ -252,22 +253,22 @@ main section.cartilla .texto-descripcion {
   font-weight: 500;
 }
 
-main section.cartilla .overlay {
+.principal main section.cartilla .overlay {
   -ms-grid-row: 2;
   -ms-grid-row-span: 5;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: 2 / 1 / 7 / 4;
   z-index: 99;
-  background-color: #00000055;
+  background-color: rgba(0, 0, 0, 0.6);
   min-height: 100%;
   min-width: 100%;
-  mix-blend-mode: darken;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+  mix-blend-mode: hue;
 }
 
-main section.cartilla .btn {
+.principal main section.cartilla .btn {
   -ms-grid-row: 2;
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
@@ -280,12 +281,102 @@ main section.cartilla .btn {
   transition: all 0.3s ease-in-out;
 }
 
-main section.cartilla .btn button {
+.principal main section.cartilla .btn button {
   width: 100%;
   height: 100%;
   font-family: 'Futura';
   font-size: 1.5rem;
   padding: 1rem;
+}
+
+.fullscreen-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fullscreen-container header {
+  overflow: hidden;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-area: 1 / 1 / 4 / 9;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: none;
+  color: white;
+  /*Diagramación*/
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 48px (1fr)[6] 48px;
+      grid-template-columns: 48px repeat(6, 1fr) 48px;
+  -ms-grid-rows: 32px (1fr)[2];
+      grid-template-rows: 32px repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.fullscreen-container header .logo {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 2 / 4 / 3;
+}
+
+.fullscreen-container header .titulo {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 2;
+  grid-area: 2 / 6 / 3 / 8;
+}
+
+.fullscreen-container header .nav-modulos {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 4;
+  grid-area: 3 / 4 / 4 / 8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fullscreen-container header .nav-modulos ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  width: 100%;
+}
+
+.fullscreen-container header .texto-header {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-area: 2 / 3 / 3 / 6;
+}
+
+.fullscreen-container main {
+  overflow: hidden;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 6;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 4 / 2 / 10 / 3;
+  background: black;
 }
 
 #footer {
