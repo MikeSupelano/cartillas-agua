@@ -971,6 +971,7 @@ body * {
     content: '';
   }
   .principal main {
+    padding-top: 25vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
