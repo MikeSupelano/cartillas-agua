@@ -2,5 +2,6 @@
 @media (max-width: 1000px) {
     @include principal-sm();
     @include modulos-sm();
+    @include contenido-comunidades-sm();
     @include footer-sm();
 }
