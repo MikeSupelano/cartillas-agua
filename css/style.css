@@ -28,6 +28,12 @@ body sup {
   font-size: 50%;
 }
 
+body small {
+  font-size: 60%;
+  margin: 0;
+  padding: 0;
+}
+
 .principal header {
   height: 20vh;
   min-height: 180px;
