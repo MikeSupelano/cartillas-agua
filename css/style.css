@@ -46,7 +46,7 @@ body * {
   top: 0;
   left: 0;
   z-index: 0;
-  width: 100%;
+  width: 100vw;
   height: auto;
 }
 
@@ -89,7 +89,7 @@ body * {
 }
 
 .principal main {
-  padding-top: 20vh;
+  padding-top: 22vh;
   height: 70vh;
   min-height: 100%;
   display: -webkit-box;
