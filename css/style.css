@@ -24,6 +24,10 @@ body * {
   font-size: 16px;
 }
 
+body sup {
+  font-size: 50%;
+}
+
 .principal header {
   height: 20vh;
   min-height: 180px;
