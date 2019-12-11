@@ -79,12 +79,13 @@
         border-bottom: 4px solid $comunidades;
         margin:0 2rem;
         z-index: 5;
-        h1{
+        &>h1{
             font-size: 3rem;
             margin-left:2rem;
             font-family: 'Futura';
             margin:0;
-            text-shadow:0px 0px 5px $comunidades;               
+            text-shadow:0px 0px 5px $comunidades;
+            white-space: nowrap;
         }
     }
 }

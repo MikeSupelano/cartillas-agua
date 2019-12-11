@@ -459,12 +459,13 @@ body small {
   z-index: 5;
 }
 
-.fullscreen-container header .texto-header h1 {
+.fullscreen-container header .texto-header > h1 {
   font-size: 3rem;
   margin-left: 2rem;
   font-family: 'Futura';
   margin: 0;
   text-shadow: 0px 0px 5px #0F9C9E;
+  white-space: nowrap;
 }
 
 .fullscreen-container {
@@ -498,13 +499,14 @@ body small {
   font-family: 'Open Sans';
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12);
+  padding: 1.5rem 0;
   /*Diagramacion*/
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(0, 1fr))[6];
-      grid-template-columns: repeat(6, minmax(0, 1fr));
-  -ms-grid-rows: (minmax(0, 1fr))[5] 0.75fr;
-      grid-template-rows: repeat(5, minmax(0, 1fr)) 0.75fr;
+  -ms-grid-columns: 2rem (minmax(0, 1fr))[6] 2rem;
+      grid-template-columns: 2rem repeat(6, minmax(0, 1fr)) 2rem;
+  -ms-grid-rows: (minmax(0, 1fr))[5];
+      grid-template-rows: repeat(5, minmax(0, 1fr));
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -522,9 +524,9 @@ body small {
 .fullscreen-container main .columna1 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 5;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 3;
-  grid-area: 1 / 1 / 6 / 4;
+  grid-area: 1 / 2 / 6 / 5;
   min-height: 100%;
   padding: 2rem 15%;
   display: -webkit-box;
@@ -571,9 +573,9 @@ body small {
 .fullscreen-container main .columna2 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 5;
-  -ms-grid-column: 4;
+  -ms-grid-column: 5;
   -ms-grid-column-span: 3;
-  grid-area: 1 / 4 / 6 / 7;
+  grid-area: 1 / 5 / 6 / 8;
   min-height: 100%;
   padding: 2rem;
   display: -webkit-box;
@@ -728,8 +730,8 @@ body small {
   -ms-grid-row: 1;
   -ms-grid-row-span: 5;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: 1 / 1 / 6 / 7;
+  -ms-grid-column-span: 8;
+  grid-area: 1 / 1 / 6 / 9;
   padding: 1rem 5%;
 }
 
@@ -801,10 +803,10 @@ body small {
 
 .fullscreen-container main > #modal .contenido p {
   -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-area: 2 / 1 / 3 / 3;
+  grid-area: 2 / 1 / 4 / 3;
   padding: 0.5rem 5%;
   display: block;
   overflow: auto;
@@ -817,15 +819,52 @@ body small {
   -ms-grid-column-span: 2;
   grid-area: 3 / 1 / 4 / 3;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.fullscreen-container main a.izquierda {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 6 / 2;
+}
+
+.fullscreen-container main a.derecha {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 8 / 6 / 9;
+}
+
+.fullscreen-container main > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: darkgray;
+  cursor: pointer;
+}
+
+.fullscreen-container main > a nav {
+  font-family: 'FuturaArabicBold';
+  color: #333333;
+}
+
+.fullscreen-container main > a nav:visited {
+  color: #333333;
 }
 
 .fullscreen-container main .nav-paginas {
-  -ms-grid-row: 6;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: 6 / 1 / 7 / 7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -834,15 +873,15 @@ body small {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 45%;
+  padding: 1rem;
   margin: 0 auto;
-  min-width: 520px;
 }
 
 .fullscreen-container main .nav-paginas .btn-dark {
   background: #303030;
   color: white;
   padding: 0.7rem 2rem;
+  margin: 0.5rem;
   font-family: 'Open Sans';
   font-weight: 800;
   border-radius: 3px;
@@ -850,43 +889,6 @@ body small {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
-}
-
-.fullscreen-container main .nav-paginas ul {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 75%;
-  margin: 0 auto;
-  padding: 0;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.fullscreen-container main .nav-paginas ul a {
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.fullscreen-container main .nav-paginas ul a li {
-  font-family: 'FuturaArabicBold';
-  color: #333333;
-}
-
-.fullscreen-container main .nav-paginas ul a:visited {
-  color: #333333;
-}
-
-.fullscreen-container main .nav-paginas ul a.active {
-  font-weight: 800;
-}
-
-.fullscreen-container main .nav-paginas ul a.active li {
-  color: #0F9C9E;
 }
 
 .fullscreen-container main.actividades > .columna2 {
@@ -971,6 +973,22 @@ body small {
   margin-top: 8px;
   line-height: 1.2rem;
   font-size: 0.95rem;
+}
+
+.fullscreen-container .letra-peque p {
+  font-size: 75% !important;
+}
+
+.fullscreen-container .letra-peque p i {
+  font-size: 100% !important;
+}
+
+.fullscreen-container .letra-peque li {
+  font-size: 75% !important;
+}
+
+.fullscreen-container .letra-peque li b.color {
+  font-size: 100% !important;
 }
 
 #footer {
@@ -1189,11 +1207,46 @@ body small {
   .fullscreen-container header {
     max-height: 30vh;
   }
+  .fullscreen-container header .logo {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: 1 / 2 / 3 / 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    padding-top: 15px;
+  }
+  .fullscreen-container header .logo img {
+    width: 100%;
+  }
+  .fullscreen-container header .texto-header {
+    display: none;
+  }
+  .fullscreen-container header .titulo {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 4;
+    grid-area: 2 / 4 / 3 / 8;
+  }
+  .fullscreen-container header .nav-modulos {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 6;
+    grid-area: 3 / 2 / 4 / 8;
+  }
   .fullscreen-container main {
-    -ms-grid-columns: 12px 1fr 12px;
-        grid-template-columns: 12px 1fr 12px;
-    -ms-grid-rows: (minmax(0, 1fr))[2] 10vh 32px;
-        grid-template-rows: repeat(2, minmax(0, 1fr)) 10vh 32px;
+    -ms-grid-columns: 1.5rem 1fr 1.5rem;
+        grid-template-columns: 1.5rem 1fr 1.5rem;
+    -ms-grid-rows: (minmax(0, 1fr))[2];
+        grid-template-rows: repeat(2, minmax(0, 1fr));
     -ms-grid-row: 5;
     -ms-grid-row-span: -1;
     -ms-grid-column: 2;
@@ -1222,12 +1275,12 @@ body small {
     -ms-grid-column-span: 4;
     grid-area: 2 / 2 / 3 / 6;
   }
-  .fullscreen-container main .nav-paginas {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 4;
-    grid-area: 3 / 2 / 4 / 6;
+  .fullscreen-container main a.derecha {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+    grid-area: 1 / 3 / 4 / 6;
   }
   #footer > div {
     width: 100%;
