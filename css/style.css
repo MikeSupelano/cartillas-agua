@@ -830,6 +830,7 @@ body small {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-area: 1 / 1 / 6 / 2;
+  border-right: 3px #d3d3d386 double;
 }
 
 .fullscreen-container main a.derecha {
@@ -838,6 +839,7 @@ body small {
   -ms-grid-column: 8;
   -ms-grid-column-span: 1;
   grid-area: 1 / 8 / 6 / 9;
+  border-left: 3px #d3d3d385 double;
 }
 
 .fullscreen-container main > a {
