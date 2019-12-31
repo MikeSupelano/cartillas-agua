@@ -52,11 +52,12 @@ header{
 }
 
 main{
-    padding-top:22vh;
+    padding: 25vh 1vw 0;
     height: 70vh;
     min-height: 100%;
     display:flex;
-    margin: 30px 15px 0;
+    max-width: 1680px;
+    margin: 0 auto;
     font-family: 'Futura';
     section.cartilla{
         width:20%;
