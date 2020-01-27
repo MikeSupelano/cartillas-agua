@@ -522,6 +522,19 @@ body small {
   padding: 0;
 }
 
+.fullscreen-container main h4, .fullscreen-container main h5 {
+  margin: 0;
+}
+
+.fullscreen-container main h4 + p, .fullscreen-container main h5 + p {
+  margin-top: 0px;
+}
+
+.fullscreen-container main p iframe {
+  width: 100%;
+  height: auto;
+}
+
 .fullscreen-container main .columna1 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 5;
