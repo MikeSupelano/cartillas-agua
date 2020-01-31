@@ -170,6 +170,33 @@
                 }                
             }
         }
+        .columnaUnica{
+            grid-area: 1 / 2 / 6 / 8;
+            min-height: 100%;
+            padding: 1rem 5%;
+            h1{
+                font-size: 1.5rem;
+                margin-bottom: 0rem;
+            }
+            p{
+                margin:0;
+                margin-bottom: 1rem;
+            }
+            img.contenido{
+                display: block;
+                max-height:90%;
+                margin:0 auto;
+                margin-bottom: 1rem;
+            }
+            img.download{
+                display: block;
+                position: absolute;
+                bottom:2rem;
+                right:2rem;
+                max-width:100px;
+                max-height:100px;
+            }
+        }
         &>#modal{
             display: grid;
             grid-template-columns: 10% 1fr 10%;

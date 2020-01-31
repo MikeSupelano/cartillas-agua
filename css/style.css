@@ -740,6 +740,42 @@ body small {
           animation-delay: 0.5s;
 }
 
+.fullscreen-container main .columnaUnica {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 6;
+  grid-area: 1 / 2 / 6 / 8;
+  min-height: 100%;
+  padding: 1rem 5%;
+}
+
+.fullscreen-container main .columnaUnica h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0rem;
+}
+
+.fullscreen-container main .columnaUnica p {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.fullscreen-container main .columnaUnica img.contenido {
+  display: block;
+  max-height: 90%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.fullscreen-container main .columnaUnica img.download {
+  display: block;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  max-width: 100px;
+  max-height: 100px;
+}
+
 .fullscreen-container main > #modal {
   display: -ms-grid;
   display: grid;
