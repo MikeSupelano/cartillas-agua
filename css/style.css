@@ -535,6 +535,16 @@ body small {
   height: auto;
 }
 
+.fullscreen-container main p strong {
+  font-size: 100%;
+}
+
+.fullscreen-container main h4 {
+  color: #0F9C9E;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
 .fullscreen-container main .columna1 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 5;
@@ -907,6 +917,18 @@ body small {
   cursor: pointer;
 }
 
+.fullscreen-container main img.circulo {
+  border-radius: 50% !important;
+  display: block;
+  margin: 0.5rem auto;
+  width: 60% !important;
+  height: auto !important;
+  max-width: 290px !important;
+  max-height: 290px;
+  margin-bottom: 1rem;
+  padding: 0 !important;
+}
+
 .fullscreen-container main.actividades > .columna2 {
   padding: 1rem 10%;
 }
@@ -952,11 +974,6 @@ body small {
   overflow: auto;
   font-family: 'Open Sans';
   padding: 10px;
-}
-
-.fullscreen-container main > .columna2 {
-  padding: 0.5rem;
-  padding-right: 10%;
 }
 
 .fullscreen-container main > .columna2 .legend-img {
